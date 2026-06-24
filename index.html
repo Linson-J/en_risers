@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ENRISERS | Empower. Enlighten. Elevate.</title>
+  <meta name="description" content="ENRISERS Collective - A young professional's movement dedicated to empowering young minds through guidance, mentorship, and opportunities.">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="light-mode">
+  
+  <!-- Progress Bar for Scroll -->
+  <div id="scroll-progress" class="scroll-progress-bar"></div>
+
+  <!-- Background Decorative Orbs -->
+  <div class="decor-orb orb-1"></div>
+  <div class="decor-orb orb-2"></div>
+  <div class="decor-orb orb-3"></div>
+
+  <!-- Header / Navbar -->
+  <header id="main-header" class="navbar-container">
+    <div class="navbar-wrapper">
+      <a href="#hero" class="brand-logo" id="brand-logo-link">
+        <img src="assets/logo.png" alt="ENRISERS Logo" class="logo-img">
+        <div class="brand-text">
+          <span class="brand-name">EN RISERS</span>
+          <span class="brand-sub">Collective</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav Menu -->
+      <nav class="nav-menu" id="nav-menu">
+        <ul class="nav-list">
+          <li><a href="#about" class="nav-link">About Us</a></li>
+          <li><a href="#events" class="nav-link">Events</a></li>
+          <li><a href="#programs" class="nav-link">Programs</a></li>
+          <li><a href="#timeline" class="nav-link">Journey</a></li>
+          <li><a href="#team" class="nav-link">Our Team</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Right Header Actions -->
+      <div class="header-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" aria-label="Toggle dark mode">
+          <i data-lucide="moon" class="toggle-icon-icon icon-moon"></i>
+          <i data-lucide="sun" class="toggle-icon-icon icon-sun" style="display: none;"></i>
+        </button>
+        <a href="#register" class="cta-nav-btn">Register Now</a>
+        
+        <!-- Mobile Menu Toggle -->
+        <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Open menu">
+          <span class="menu-bar bar-1"></span>
+          <span class="menu-bar bar-2"></span>
+          <span class="menu-bar bar-3"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Menu -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <ul class="mobile-nav-list">
+      <li><a href="#about" class="mobile-nav-link">About Us</a></li>
+      <li><a href="#events" class="mobile-nav-link">Events</a></li>
+      <li><a href="#programs" class="mobile-nav-link">Programs</a></li>
+      <li><a href="#timeline" class="mobile-nav-link">Journey</a></li>
+      <li><a href="#team" class="mobile-nav-link">Our Team</a></li>
+      <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      <li><a href="#register" class="mobile-nav-link btn-drawer">Register Now</a></li>
+    </ul>
+  </div>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero-section">
+    <!-- Interactive Background Canvas -->
+    <canvas id="particle-canvas" class="hero-canvas"></canvas>
+    
+    <div class="hero-content-wrapper">
+      <div class="hero-text-content">
+        <div class="hero-badge reveal-fade">
+          <span class="badge-dot"></span>
+          <span class="badge-text">EMPOWER · ENLIGHTEN · ELEVATE</span>
+        </div>
+        <h1 class="hero-title reveal-slide-up">
+          Shaping the <span class="text-gradient">Leaders</span> of Tomorrow
+        </h1>
+        <p class="hero-subtitle reveal-slide-up delay-100">
+          We are a young professional's movement dedicated to empowering young minds. Discover your potential and fly high with the right guidance.
+        </p>
+        
+        <!-- Tamil Tagline with custom typography and accent -->
+        <div class="tamil-tagline-container reveal-slide-up delay-200">
+          <span class="tamil-tagline">படிப்போம்! பகிர்வோம்! பறப்போம்!</span>
+          <div class="tamil-translation">Let's Learn. Let's Share. Let's Fly.</div>
+        </div>
+
+        <div class="hero-ctas reveal-slide-up delay-300">
+          <a href="#register" class="btn btn-primary btn-glow">Join the Movement</a>
+          <a href="#about" class="btn btn-secondary">Explore More <i data-lucide="arrow-right"></i></a>
+        </div>
+      </div>
+
+      <!-- Hero Visuals (Abstract Floating Core Values) -->
+      <div class="hero-visual-content reveal-fade delay-200">
+        <div class="core-values-floating-container">
+          <div class="floating-value-card card-padippom">
+            <div class="float-icon-wrapper"><i data-lucide="book-open"></i></div>
+            <h4>Padippom.</h4>
+            <p>To learn and grow.</p>
+          </div>
+          <div class="floating-value-card card-pagirvom">
+            <div class="float-icon-wrapper"><i data-lucide="users"></i></div>
+            <h4>Pagirvom.</h4>
+            <p>To share and uplift.</p>
+          </div>
+          <div class="floating-value-card card-parappom">
+            <div class="float-icon-wrapper"><i data-lucide="navigation"></i></div>
+            <h4>Parappom.</h4>
+            <p>To inspire and empower.</p>
+          </div>
+          <!-- Decorative Floating Sparkles -->
+          <div class="floating-sparkle fs-1"><i data-lucide="sparkles"></i></div>
+          <div class="floating-sparkle fs-2"><i data-lucide="star"></i></div>
+          <div class="floating-sparkle fs-3"><i data-lucide="graduation-cap"></i></div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Scroll Down Indicator -->
+    <a href="#about" class="scroll-down-arrow" aria-label="Scroll down">
+      <span class="mouse-icon">
+        <span class="mouse-wheel"></span>
+      </span>
+      <span class="arrow-down-icon"></span>
+    </a>
+  </section>
+
+  <!-- About Us Section -->
+  <section id="about" class="section-container about-section">
+    <div class="container">
+      <div class="section-header align-left reveal-slide-up">
+        <span class="section-tag">WHO WE ARE</span>
+        <h2 class="section-title">About Us</h2>
+        <div class="header-line"></div>
+      </div>
+      
+      <div class="about-grid">
+        <!-- Team Visuals Column -->
+        <div class="about-visual reveal-slide-up">
+          <div class="team-image-wrapper">
+            <img src="assets/team.png" alt="ENRISERS Young Professionals Group" class="team-img">
+            <div class="image-overlay-glow"></div>
+            <!-- Interactive Hover Badge -->
+            <div class="hover-badge-stats">
+              <i data-lucide="users-2"></i>
+              <div>
+                <span class="stat-badge-num">100%</span>
+                <span class="stat-badge-txt">Youth-Led Initiative</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- About Text Details Column -->
+        <div class="about-content">
+          <p class="about-lead reveal-slide-up">
+            <strong>ENRISERS</strong> is a dynamic movement of young professionals united by a singular mission: to empower the youth of today to become the leaders of tomorrow.
+          </p>
+          <p class="about-body reveal-slide-up delay-100">
+            We bridge the gap between academic education and real-world opportunities by building a strong ecosystem of mentorship, career awareness, and skill development. We believe that early guidance transforms lives, enabling students from all walks of life to unlock their true potential.
+          </p>
+          <p class="about-body reveal-slide-up delay-100">
+            Through targeted flagship programs and community engagements, we are building a supportive generation that rises by helping others rise.
+          </p>
+          
+          <!-- Inspiration Card (Dr. APJ Abdul Kalam) -->
+          <div class="inspiration-card reveal-slide-up delay-200">
+            <div class="inspiration-flex">
+              <div class="kalam-image-container">
+                <img src="assets/kalam.png" alt="Dr. APJ Abdul Kalam" class="kalam-img">
+                <div class="kalam-glow"></div>
+              </div>
+              <div class="inspiration-text">
+                <span class="inspire-tag">OUR INSPIRATION</span>
+                <p class="inspiration-desc">
+                  Following Dr. Kalam's vision, ENRISERS believes that when youth learn, share, and inspire, they become the driving force behind a stronger and more progressive society.
+                </p>
+                <div class="quote-wrapper">
+                  <i data-lucide="quote" class="quote-icon"></i>
+                  <blockquote class="kalam-quote">
+                    "DREAM.. DREAM.. DREAM.. Dreams transform into thoughts and thoughts result in action."
+                  </blockquote>
+                  <cite class="quote-author">— Dr. APJ Abdul Kalam</cite>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Vision & Mission Section -->
+  <section id="vision-mission" class="section-container vision-mission-section theme-bg-alt">
+    <div class="container">
+      <div class="section-header align-center reveal-slide-up">
+        <span class="section-tag">OUR PURPOSE</span>
+        <h2 class="section-title">Vision & Mission</h2>
+        <div class="header-line center"></div>
+      </div>
+
+      <div class="vision-mission-grid">
+        <!-- Vision Card -->
+        <div class="purpose-card vision-card reveal-slide-up">
+          <div class="purpose-icon-box vision-icon">
+            <i data-lucide="eye"></i>
+          </div>
+          <h3>Our Vision</h3>
+          <p>
+            To build a generation of empowered, informed, and purpose-driven youth who are capable of transforming their own lives and contributing positively to society.
+          </p>
+          <div class="card-bg-gradient"></div>
+        </div>
+
+        <!-- Mission Card -->
+        <div class="purpose-card mission-card reveal-slide-up delay-100">
+          <div class="purpose-icon-box mission-icon">
+            <i data-lucide="target"></i>
+          </div>
+          <h3>Our Mission</h3>
+          <p>
+            To ensure that every young person, regardless of their socio-economic background, has access to the guidance, mentorship, and opportunities necessary to pursue their dreams and unlock their true potential.
+          </p>
+          <div class="card-bg-gradient"></div>
+        </div>
+      </div>
+
+      <!-- Why ENRISERS Callout -->
+      <div class="why-enrisers-container reveal-slide-up delay-200">
+        <div class="why-glow"></div>
+        <div class="why-content-box">
+          <h3 class="why-title">Why ENRISERS?</h3>
+          <p class="why-text">
+            Across our communities, countless young people possess talent, passion, and ambition. However, many remain unaware of the opportunities available to them. Lack of guidance, mentorship, exposure, and access often prevents them from pursuing their dreams and reaching their full potential. We believe that no youth should be left behind simply because they did not know where to begin.
+          </p>
+          <div class="chain-reaction-box">
+            <div class="chain-step">
+              <span class="chain-num">1</span>
+              <p>When one <strong>youth rises</strong>, a family rises.</p>
+            </div>
+            <i data-lucide="chevrons-right" class="chain-arrow"></i>
+            <div class="chain-step">
+              <span class="chain-num">2</span>
+              <p>When <strong>families rise</strong>, communities prosper.</p>
+            </div>
+            <i data-lucide="chevrons-right" class="chain-arrow"></i>
+            <div class="chain-step">
+              <span class="chain-num">3</span>
+              <p>When <strong>communities prosper</strong>, society transforms.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Upcoming Events Section -->
+  <section id="events" class="section-container events-section">
+    <div class="container">
+      <div class="section-header align-center reveal-slide-up">
+        <span class="section-tag">WHATS HAPPENING</span>
+        <h2 class="section-title">Upcoming Events</h2>
+        <div class="header-line center"></div>
+      </div>
+
+      <div class="event-flyer-centered-container reveal-slide-up">
+        <div class="event-flyer-wrapper">
+          <img src="assets/unlock26.png" alt="UNLOCK '26 Event Flyer" class="event-flyer-responsive">
+          <div class="event-status-tag">Upcoming Session</div>
+        </div>
+        <div class="event-flyer-actions">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSc51ao4Z497T9MpJiJfsImbEXV0AA9ngXh93TwnDvzBZB_1ig/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-primary event-reg-btn btn-glow">
+            <i data-lucide="external-link"></i> Register For Session (Google Form)
+          </a>
+          <div class="event-enquiry-inline">
+            <i data-lucide="phone"></i>
+            <span>Call to Enquire: <strong>86677 66929 / 90253 62645</strong></span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Core Values & Operations Section -->
+  <section id="what-we-do" class="section-container core-values-section theme-bg-alt">
+    <div class="container">
+      <div class="section-header align-center reveal-slide-up">
+        <span class="section-tag">HOW WE OPERATE</span>
+        <h2 class="section-title">Core Values & Pillars</h2>
+        <div class="header-line center"></div>
+      </div>
+
+      <div class="pillars-layout-grid">
+        <!-- Pillars Info (Left) -->
+        <div class="pillars-text-box reveal-slide-up">
+          <h3>The Tamil Triad</h3>
+          <p class="pillars-lead-desc">
+            Our movement is grounded in three simple but profound principles of engagement, inspired by building community values.
+          </p>
+          
+          <div class="pillar-row">
+            <div class="pillar-badge p-padippom">படிப்போம்</div>
+            <div class="pillar-details">
+              <h4>Padippom (To Learn & Grow)</h4>
+              <p>Acquiring knowledge, building foundational skills, and expanding career horizons through workshops and awareness sessions.</p>
+            </div>
+          </div>
+          
+          <div class="pillar-row">
+            <div class="pillar-badge p-pagirvom">பகிர்வோம்</div>
+            <div class="pillar-details">
+              <h4>Pagirvom (To Share & Uplift)</h4>
+              <p>Spreading resources, sharing experience, and bridging networking gaps by connecting mentors with students.</p>
+            </div>
+          </div>
+          
+          <div class="pillar-row">
+            <div class="pillar-badge p-parappom">பறப்போம்</div>
+            <div class="pillar-details">
+              <h4>Parappom (To Inspire & Empower)</h4>
+              <p>Rising collectively, executing on dreams, and achieving heights while mentoring the next wave of students.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Operations Checklist (Right) -->
+        <div class="pillars-checklist-box reveal-slide-up delay-100">
+          <h3>Key Focus Areas</h3>
+          <p class="checklist-desc">We bridge the gap between talent and guidance through six strategic operational pillars:</p>
+          
+          <div class="focus-grid">
+            <div class="focus-item">
+              <div class="focus-icon"><i data-lucide="compass"></i></div>
+              <div class="focus-text">
+                <h4>Career Guidance</h4>
+                <p>Strategic path identification matching individual talent.</p>
+              </div>
+            </div>
+            
+            <div class="focus-item">
+              <div class="focus-icon"><i data-lucide="users-2"></i></div>
+              <div class="focus-text">
+                <h4>Mentorship</h4>
+                <p>Personalized, one-on-one professional guidance.</p>
+              </div>
+            </div>
+            
+            <div class="focus-item">
+              <div class="focus-icon"><i data-lucide="link"></i></div>
+              <div class="focus-text">
+                <h4>Opportunity Connect</h4>
+                <p>Linking qualified candidates to jobs and internships.</p>
+              </div>
+            </div>
+            
+            <div class="focus-item">
+              <div class="focus-icon"><i data-lucide="globe"></i></div>
+              <div class="focus-text">
+                <h4>Community Building</h4>
+                <p>Creating safe ecosystems of learning and sharing.</p>
+              </div>
+            </div>
+            
+            <div class="focus-item">
+              <div class="focus-icon"><i data-lucide="activity"></i></div>
+              <div class="focus-text">
+                <h4>Skill Development</h4>
+                <p>Building core analytical and execution competencies.</p>
+              </div>
+            </div>
+            
+            <div class="focus-item">
+              <div class="focus-icon"><i data-lucide="heart"></i></div>
+              <div class="focus-text">
+                <h4>Life & Soft Skills</h4>
+                <p>Instilling confidence, public speaking, and leadership.</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="bridge-tagline">
+            "ENRISERS exists to bridge the gap between talent and guidance"
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Programs Section -->
+  <section id="programs" class="section-container programs-section">
+    <div class="container">
+      <div class="section-header align-center reveal-slide-up">
+        <span class="section-tag">WHAT WE DO</span>
+        <h2 class="section-title">Flagship Programs</h2>
+        <div class="header-line center"></div>
+      </div>
+
+      <div class="programs-deck">
+        
+        <!-- Program 1: Career Path Awareness -->
+        <div class="program-card-wrapper reveal-slide-up">
+          <div class="program-card">
+            <!-- Front of Card -->
+            <div class="card-front">
+              <div class="card-front-content">
+                <div class="card-icon-container"><i data-lucide="route"></i></div>
+                <h3 class="program-name">Career Path Awareness</h3>
+                <p class="program-summary">Creating awareness about various educational tracks and professional landscapes for students early in their education.</p>
+                <div class="flip-hint">Hover to Flip <i data-lucide="rotate-cw"></i></div>
+              </div>
+              <div class="card-decor-circle"></div>
+            </div>
+            <!-- Back of Card -->
+            <div class="card-back">
+              <div class="card-back-content">
+                <h3>Program Details</h3>
+                <ul class="program-details-list">
+                  <li><i data-lucide="check-circle-2"></i> Structured career mapping sessions</li>
+                  <li><i data-lucide="check-circle-2"></i> Industry experts panels</li>
+                  <li><i data-lucide="check-circle-2"></i> School and college level guidance</li>
+                  <li><i data-lucide="check-circle-2"></i> Interactive career tests</li>
+                </ul>
+                <a href="#register" class="btn-card-action">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program 2: Dream Builders Mentorship -->
+        <div class="program-card-wrapper reveal-slide-up delay-100">
+          <div class="program-card">
+            <!-- Front of Card -->
+            <div class="card-front">
+              <div class="card-front-content">
+                <div class="card-icon-container"><i data-lucide="git-merge"></i></div>
+                <h3 class="program-name">Dream Builders Mentorship</h3>
+                <p class="program-summary">One-on-one professional mentorship matching students directly with established industry professionals.</p>
+                <div class="flip-hint">Hover to Flip <i data-lucide="rotate-cw"></i></div>
+              </div>
+              <div class="card-decor-circle"></div>
+            </div>
+            <!-- Back of Card -->
+            <div class="card-back">
+              <div class="card-back-content">
+                <h3>Program Details</h3>
+                <ul class="program-details-list">
+                  <li><i data-lucide="check-circle-2"></i> Personalized matching logic</li>
+                  <li><i data-lucide="check-circle-2"></i> Monthly milestone reviews</li>
+                  <li><i data-lucide="check-circle-2"></i> CV review & interview training</li>
+                  <li><i data-lucide="check-circle-2"></i> Industry networking access</li>
+                </ul>
+                <a href="#register" class="btn-card-action">Apply for Mentor</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program 3: Future Leaders Fellowship -->
+        <div class="program-card-wrapper reveal-slide-up delay-200">
+          <div class="program-card">
+            <!-- Front of Card -->
+            <div class="card-front">
+              <div class="card-front-content">
+                <div class="card-icon-container"><i data-lucide="award"></i></div>
+                <h3 class="program-name">Future Leaders Fellowship</h3>
+                <p class="program-summary">A selective leadership development track focusing on soft skills, teamwork, and social responsibility.</p>
+                <div class="flip-hint">Hover to Flip <i data-lucide="rotate-cw"></i></div>
+              </div>
+              <div class="card-decor-circle"></div>
+            </div>
+            <!-- Back of Card -->
+            <div class="card-back">
+              <div class="card-back-content">
+                <h3>Program Details</h3>
+                <ul class="program-details-list">
+                  <li><i data-lucide="check-circle-2"></i> Core cohort of selected students</li>
+                  <li><i data-lucide="check-circle-2"></i> Capstone community projects</li>
+                  <li><i data-lucide="check-circle-2"></i> Leadership retreat & camp</li>
+                  <li><i data-lucide="check-circle-2"></i> Cohort network of achievers</li>
+                </ul>
+                <a href="#register" class="btn-card-action">Apply Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program 4: Career Compass Workshops -->
+        <div class="program-card-wrapper reveal-slide-up">
+          <div class="program-card">
+            <!-- Front of Card -->
+            <div class="card-front">
+              <div class="card-front-content">
+                <div class="card-icon-container"><i data-lucide="terminal"></i></div>
+                <h3 class="program-name">Career Compass Workshops</h3>
+                <p class="program-summary">Immersive skill sprints focused on technical training, resume building, and digital literacy.</p>
+                <div class="flip-hint">Hover to Flip <i data-lucide="rotate-cw"></i></div>
+              </div>
+              <div class="card-decor-circle"></div>
+            </div>
+            <!-- Back of Card -->
+            <div class="card-back">
+              <div class="card-back-content">
+                <h3>Program Details</h3>
+                <ul class="program-details-list">
+                  <li><i data-lucide="check-circle-2"></i> Interactive coding/tech classes</li>
+                  <li><i data-lucide="check-circle-2"></i> Mock interview sessions</li>
+                  <li><i data-lucide="check-circle-2"></i> LinkedIn optimization hacks</li>
+                  <li><i data-lucide="check-circle-2"></i> Design & logic foundations</li>
+                </ul>
+                <a href="#register" class="btn-card-action">See Calendar</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Program 5: Scholarship Support Network -->
+        <div class="program-card-wrapper reveal-slide-up delay-100">
+          <div class="program-card">
+            <!-- Front of Card -->
+            <div class="card-front">
+              <div class="card-front-content">
+                <div class="card-icon-container"><i data-lucide="graduation-cap"></i></div>
+                <h3 class="program-name">Scholarship Support Network</h3>
+                <p class="program-summary">Connecting talented students from underprivileged backgrounds with financial aid opportunities and guidance.</p>
+                <div class="flip-hint">Hover to Flip <i data-lucide="rotate-cw"></i></div>
+              </div>
+              <div class="card-decor-circle"></div>
+            </div>
+            <!-- Back of Card -->
+            <div class="card-back">
+              <div class="card-back-content">
+                <h3>Program Details</h3>
+                <ul class="program-details-list">
+                  <li><i data-lucide="check-circle-2"></i> Scholarship portal tracking</li>
+                  <li><i data-lucide="check-circle-2"></i> Document preparation aid</li>
+                  <li><i data-lucide="check-circle-2"></i> Interview training for grants</li>
+                  <li><i data-lucide="check-circle-2"></i> Emergency financial assistance</li>
+                </ul>
+                <a href="#register" class="btn-card-action">Get Support</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Impact Counters Section (OUR VISION 2030) -->
+  <section id="impact" class="section-container impact-section theme-bg-alt">
+    <div class="container">
+      <div class="section-header align-center reveal-slide-up">
+        <span class="section-tag">OUR VISION 2030</span>
+        <h2 class="section-title">Targeting Empowered Futures</h2>
+        <div class="header-line center"></div>
+      </div>
+
+      <div class="stats-counter-grid">
+        <!-- Stat Item 1 -->
+        <div class="stat-counter-card reveal-slide-up">
+          <div class="stat-icon-glow"><i data-lucide="graduation-cap"></i></div>
+          <div class="counter-num-box">
+            <span class="counter-value" data-target="10000">0</span><span class="counter-suffix">+</span>
+          </div>
+          <p class="counter-label">Students Guided</p>
+        </div>
+
+        <!-- Stat Item 2 -->
+        <div class="stat-counter-card reveal-slide-up delay-100">
+          <div class="stat-icon-glow"><i data-lucide="handshake"></i></div>
+          <div class="counter-num-box">
+            <span class="counter-value" data-target="500">0</span><span class="counter-suffix">+</span>
+          </div>
+          <p class="counter-label">Active Mentors</p>
+        </div>
+
+        <!-- Stat Item 3 -->
+        <div class="stat-counter-card reveal-slide-up delay-200">
+          <div class="stat-icon-glow"><i data-lucide="book-open-check"></i></div>
+          <div class="counter-num-box">
+            <span class="counter-value" data-target="300">0</span><span class="counter-suffix">+</span>
+          </div>
+          <p class="counter-label">Career Workshops</p>
+        </div>
+
+        <!-- Stat Item 4 -->
+        <div class="stat-counter-card reveal-slide-up delay-300">
+          <div class="stat-icon-glow"><i data-lucide="sparkles"></i></div>
+          <div class="counter-num-box">
+            <span class="counter-value" data-target="50">0</span><span class="counter-suffix">+</span>
+          </div>
+          <p class="counter-label">Institutional Partners</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline Section -->
+  <section id="timeline" class="section-container timeline-section">
+    <div class="container">
+      <div class="section-header align-center reveal-slide-up">
+        <span class="section-tag">OUR JOURNEY PLAN</span>
+        <h2 class="section-title">Starting Our Journey</h2>
+        <div class="header-line center"></div>
+      </div>
+
+      <div class="timeline-container">
+        <!-- Central Timeline Track -->
+        <div class="timeline-track">
+          <div class="timeline-progress" id="timeline-progress-bar"></div>
+        </div>
+
+        <!-- Timeline Block 1 (Left) -->
+        <div class="timeline-item timeline-left reveal-slide-up">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <span class="timeline-year">Mid 2026</span>
+            <h3>The Spark & Launch</h3>
+            <p>Forming the ENRISERS Collective. Bringing together an energetic founding team of young professionals to tackle the guidance gap and launch our digital footprint.</p>
+            <span class="timeline-card-decor"></span>
+          </div>
+        </div>
+
+        <!-- Timeline Block 2 (Right) -->
+        <div class="timeline-item timeline-right reveal-slide-up">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <span class="timeline-year">Late 2026</span>
+            <h3>School Outreach campaigns</h3>
+            <p>Executing regional school tours and organizing targeted workshops starting with our Alangulam career sessions (like UNLOCK '26) to assist 12th standard students.</p>
+            <span class="timeline-card-decor"></span>
+          </div>
+        </div>
+
+        <!-- Timeline Block 3 (Left) -->
+        <div class="timeline-item timeline-left reveal-slide-up">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <span class="timeline-year">Early 2027</span>
+            <h3>Mentorship Match Engine</h3>
+            <p>Deploying the structured 1-on-1 Dream Builders Mentorship engine, connecting high schoolers directly with global industry mentors.</p>
+            <span class="timeline-card-decor"></span>
+          </div>
+        </div>
+
+        <!-- Timeline Block 4 (Right) -->
+        <div class="timeline-item timeline-right reveal-slide-up">
+          <div class="timeline-marker">
+            <div class="marker-dot"></div>
+          </div>
+          <div class="timeline-card">
+            <span class="timeline-year">Mid 2027 & Beyond</span>
+            <h3>Digital Growth & Scale</h3>
+            <p>Expanding the Fellowship, establishing a robust Scholarship Support Network, and targeting to empower over 5,000 students across the state.</p>
+            <span class="timeline-card-decor"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section (Flat, text-only coordinators list) -->
+  <section id="team" class="section-container team-section theme-bg-alt">
+    <div class="container">
+      <div class="section-header align-center reveal-slide-up">
+        <span class="section-tag">OUR TEAM</span>
+        <h2 class="section-title">Core Coordinators</h2>
+        <div class="header-line center"></div>
+      </div>
+
+      <div class="team-grid reveal-slide-up">
+        <!-- Coordinator 1 -->
+        <div class="team-card-flat">
+          <div class="team-icon-box"><i data-lucide="shield-check"></i></div>
+          <h4 class="member-name">David Brightson</h4>
+          <span class="member-title">Coordinator</span>
+          <p class="member-desc">HR Specialist, Bangalore</p>
+        </div>
+
+        <!-- Coordinator 2 -->
+        <div class="team-card-flat">
+          <div class="team-icon-box"><i data-lucide="shield-check"></i></div>
+          <h4 class="member-name">Joel Milton</h4>
+          <span class="member-title">Coordinator</span>
+          <p class="member-desc">Social Entrepreneur</p>
+        </div>
+
+        <!-- Coordinator 3 -->
+        <div class="team-card-flat">
+          <div class="team-icon-box"><i data-lucide="shield-check"></i></div>
+          <h4 class="member-name">Joel Linson</h4>
+          <span class="member-title">Coordinator</span>
+          <p class="member-desc">Full Stack Developer</p>
+        </div>
+
+        <!-- Coordinator 4 -->
+        <div class="team-card-flat">
+          <div class="team-icon-box"><i data-lucide="shield-check"></i></div>
+          <h4 class="member-name">Sabeetha Selvaraj</h4>
+          <span class="member-title">Coordinator</span>
+          <p class="member-desc">Digital Marketer</p>
+        </div>
+
+        <!-- Coordinator 5 -->
+        <div class="team-card-flat">
+          <div class="team-icon-box"><i data-lucide="shield-check"></i></div>
+          <h4 class="member-name">Stanly Prince</h4>
+          <span class="member-title">Coordinator</span>
+          <p class="member-desc">Founder, Learndawn India</p>
+        </div>
+
+        <!-- Coordinator 6 -->
+        <div class="team-card-flat">
+          <div class="team-icon-box"><i data-lucide="shield-check"></i></div>
+          <h4 class="member-name">David Livingston</h4>
+          <span class="member-title">Coordinator</span>
+          <p class="member-desc">Pursuing BSW</p>
+        </div>
+
+        <!-- Coordinator 7 -->
+        <div class="team-card-flat">
+          <div class="team-icon-box"><i data-lucide="shield-check"></i></div>
+          <h4 class="member-name">Jovina</h4>
+          <span class="member-title">Coordinator</span>
+          <p class="member-desc">AI Engineer</p>
+        </div>
+
+        <!-- Coordinator 8 -->
+        <div class="team-card-flat">
+          <div class="team-icon-box"><i data-lucide="shield-check"></i></div>
+          <h4 class="member-name">Jency Joseph</h4>
+          <span class="member-title">Coordinator</span>
+          <p class="member-desc">Pursuing BMIT Radiology</p>
+        </div>
+
+        <!-- CEO & Advisor -->
+        <div class="team-card-flat leadership-card">
+          <div class="team-icon-box"><i data-lucide="award"></i></div>
+          <h4 class="member-name">K. John Sankar</h4>
+          <span class="member-title">CEO & Advisor</span>
+          <p class="member-desc">ENRISERS Collective</p>
+        </div>
+
+        <!-- Advisor -->
+        <div class="team-card-flat leadership-card">
+          <div class="team-icon-box"><i data-lucide="user-check"></i></div>
+          <h4 class="member-name">Varalarmaathi</h4>
+          <span class="member-title">Advisor</span>
+          <p class="member-desc">ENRISERS Collective</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Registration & Contact Section -->
+  <section id="register" class="section-container register-section">
+    <div class="container">
+      <div class="register-layout-card reveal-slide-up">
+        <!-- Form Left: Branding/Contact Info -->
+        <div class="register-info-panel">
+          <div class="info-panel-glow"></div>
+          <h3>Take the First Step</h3>
+          <p class="panel-desc">Whether you are a student looking for guidance or a professional wanting to give back as a mentor, ENRISERS welcomes you.</p>
+          
+          <div class="contact-info-list">
+            <div class="contact-item">
+              <div class="contact-icon"><i data-lucide="mail"></i></div>
+              <div class="contact-text">
+                <span>Email Us</span>
+                <strong>info@enrisers.org</strong>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i data-lucide="phone"></i></div>
+              <div class="contact-text">
+                <span>Call Us</span>
+                <strong>+91 86677 66929</strong>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon"><i data-lucide="map-pin"></i></div>
+              <div class="contact-text">
+                <span>Location</span>
+                <strong>Tamil Nadu, India</strong>
+              </div>
+            </div>
+          </div>
+
+          <!-- Small SVG Illustration -->
+          <div class="register-svg-decor">
+            <svg class="globe-connection-svg" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="100" cy="100" r="80" stroke="rgba(255,255,255,0.15)" stroke-width="2" stroke-dasharray="4 4" />
+              <circle cx="100" cy="100" r="50" stroke="rgba(255,255,255,0.15)" stroke-width="2" />
+              <!-- Floating Nodes -->
+              <circle cx="40" cy="80" r="8" fill="#ff7a30" class="floating-node-1" />
+              <circle cx="160" cy="120" r="6" fill="#0f2942" stroke="white" stroke-width="1.5" class="floating-node-2" />
+              <circle cx="100" cy="30" r="10" fill="#ffb800" class="floating-node-3" />
+              <path d="M40 80Q100 30 100 30Q100 150 160 120" stroke="rgba(255,255,255,0.3)" stroke-width="1.5" fill="none" />
+            </svg>
+          </div>
+        </div>
+
+        <!-- Form Right: Interactive Registration Form -->
+        <div class="register-form-panel">
+          <h4 style="font-family: var(--font-heading); font-size: 1.3rem; margin-bottom: 24px; font-weight: 800; color: var(--color-orange);">Student Registration</h4>
+
+          <!-- Student Form -->
+          <form id="student-form" class="signup-form active-form" novalidate>
+            <div class="form-row">
+              <div class="input-group">
+                <input type="text" id="student-name" required placeholder=" ">
+                <label for="student-name">Full Name</label>
+                <i data-lucide="user" class="input-icon"></i>
+                <span class="validation-badge"><i data-lucide="check" class="success-icon"></i><i data-lucide="alert-circle" class="error-icon"></i></span>
+                <div class="error-msg">Please enter your full name.</div>
+              </div>
+            </div>
+            
+            <div class="form-row">
+              <div class="input-group">
+                <input type="email" id="student-email" required placeholder=" ">
+                <label for="student-email">Email Address</label>
+                <i data-lucide="mail" class="input-icon"></i>
+                <span class="validation-badge"><i data-lucide="check" class="success-icon"></i><i data-lucide="alert-circle" class="error-icon"></i></span>
+                <div class="error-msg">Please enter a valid email address.</div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="input-group">
+                <input type="tel" id="student-phone" required placeholder=" " pattern="[0-9]{10}">
+                <label for="student-phone">Mobile Number (10 digits)</label>
+                <i data-lucide="phone" class="input-icon"></i>
+                <span class="validation-badge"><i data-lucide="check" class="success-icon"></i><i data-lucide="alert-circle" class="error-icon"></i></span>
+                <div class="error-msg">Please enter a valid 10-digit mobile number.</div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="input-group select-group">
+                <select id="student-program" required>
+                  <option value="" disabled selected hidden></option>
+                  <option value="unlock26">UNLOCK '26 Event Session (04th July)</option>
+                  <option value="career-awareness">Career Path Awareness</option>
+                  <option value="mentorship">Dream Builders Mentorship</option>
+                  <option value="fellowship">Future Leaders Fellowship</option>
+                  <option value="workshops">Career Compass Workshops</option>
+                  <option value="scholarship">Scholarship Support Network</option>
+                </select>
+                <label for="student-program">Select Preferred Program</label>
+                <i data-lucide="graduation-cap" class="input-icon"></i>
+                <div class="error-msg">Please choose a program.</div>
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-submit-form">
+              <span class="btn-text">Submit Registration</span>
+              <span class="spinner"></span>
+            </button>
+          </form>
+
+
+          <!-- Success Animation Frame -->
+          <div class="form-success-card" id="form-success-box" style="display: none;">
+            <div class="success-check-circle">
+              <svg viewBox="0 0 52 52" class="svg-checkmark">
+                <circle cx="26" cy="26" r="25" fill="none" class="checkmark-circle"/>
+                <path fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8" class="checkmark-check"/>
+              </svg>
+            </div>
+            <h3>Registration Submitted!</h3>
+            <p>Thank you for reaching out. The ENRISERS Collective team will review your application and contact you within 48 hours.</p>
+            <button class="btn btn-secondary btn-reset-form" id="btn-success-close">Done</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact / Footer Section -->
+  <footer id="contact" class="footer-section">
+    <div class="container">
+      <div class="footer-top-grid">
+        <div class="footer-brand-col">
+          <div class="brand-logo footer-logo">
+            <img src="assets/logo.png" alt="ENRISERS Logo" class="logo-img">
+            <div class="brand-text">
+              <span class="brand-name">EN RISERS</span>
+              <span class="brand-sub">Collective</span>
+            </div>
+          </div>
+          <p class="footer-desc">
+            Empowering youth to discover their true path and rise with confidence. Bridging the gap between talent and mentorship.
+          </p>
+          <div class="footer-socials">
+            <a href="https://www.instagram.com/enrisers?igsh=MWVwOXdjeHBuYmhpcA==" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+            <a href="https://whatsapp.com/channel/0029Vb85pzV8fewuXjWLjD13" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp Channel"><i data-lucide="message-square"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#events">Upcoming Events</a></li>
+            <li><a href="#programs">Flagship Programs</a></li>
+            <li><a href="#timeline">Journey Timeline</a></li>
+            <li><a href="#team">Our Team</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
+          <h4>Core Pillars</h4>
+          <ul>
+            <li><a href="#what-we-do">Career Guidance</a></li>
+            <li><a href="#what-we-do">One-on-One Mentorship</a></li>
+            <li><a href="#what-we-do">Opportunity Connect</a></li>
+            <li><a href="#what-we-do">Skill Development</a></li>
+            <li><a href="#what-we-do">Soft Skills Training</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-newsletter-col">
+          <h4>Join Us on WhatsApp</h4>
+          <p>Get instant updates on our upcoming school campaigns, career guidance sessions, and mentorship opportunities.</p>
+          <a href="https://whatsapp.com/channel/0029Vb85pzV8fewuXjWLjD13" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 8px; width: auto; padding: 12px 24px; margin-top: 8px;">
+            <i data-lucide="message-square" style="width: 18px; height: 18px;"></i>
+            Join WhatsApp Channel
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="footer-copy">
+          &copy; 2026 ENRISERS Collective. All rights reserved. | படிப்போம்! பகிர்வோம்! பறப்போம்!
+        </div>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Upcoming Event Advertisement Popup Modal -->
+  <div id="event-popup-modal" class="popup-modal-overlay">
+    <div class="popup-modal-container">
+      <button class="popup-close-btn" id="btn-close-popup" aria-label="Close Ad">
+        <i data-lucide="x"></i>
+      </button>
+      <div class="popup-image-wrapper">
+        <img src="assets/unlock26.png" alt="Upcoming Event: UNLOCK '26" class="popup-event-img">
+      </div>
+      <div class="popup-actions">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSc51ao4Z497T9MpJiJfsImbEXV0AA9ngXh93TwnDvzBZB_1ig/viewform" target="_blank" rel="noopener noreferrer" class="btn btn-primary popup-cta-btn" id="btn-popup-cta">Register For Event Now</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
